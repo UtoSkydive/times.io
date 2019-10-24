@@ -2,6 +2,7 @@
 var updateHour=function(){
 var date=new Date(),
     hours=date.getHours();
+    
     ampm,
     minutes=date.getMinutes(),
     seconds=date.getSeconds(),
@@ -20,7 +21,7 @@ var pHoras=document.getElementById("horas"),
     pYear=document.getElementById('year');
    
 var semana=['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
-console.log(dayWeek)
+
 
 pDiaSemana.textContent=semana[dayWeek];
 pDia.textContent=day;
@@ -29,7 +30,7 @@ pMes.textContent=meses[month];
 pYear.textContent=year;
 
 if(hours>=12){
-    hours=horas-12;
+    hours=hours-12;
     ampm='PM';
 }else{
     ampm="AM";
